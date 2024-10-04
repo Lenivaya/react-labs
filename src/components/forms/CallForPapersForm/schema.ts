@@ -25,7 +25,7 @@ export const formSchema = z
       ),
     format: z.enum(FORMATS),
     customFormat: z.string().min(3).max(50).optional(),
-    topic: z.string().min(5).max(50),
+    topic: z.string().min(3).max(50),
     description: z.string().max(400).optional()
   })
   .refine(
